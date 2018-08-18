@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAC", "DAC\DAC.csproj", "{7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DACContract", "DACContract\DACContract.csproj", "{54349ED9-E864-4A33-B72E-BEBE2DCD45F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biz", "Biz\Biz.csproj", "{8065ACE8-20D0-47C2-8C84-306F95862ADF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biz", "Biz\Biz.csproj", "{8065ACE8-20D0-47C2-8C84-306F95862ADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizContract", "BizContract\BizContract.csproj", "{212E4076-6A10-42B4-8E0C-A36D839B8B19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BizContract", "BizContract\BizContract.csproj", "{212E4076-6A10-42B4-8E0C-A36D839B8B19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedViewModel", "SharedViewModel\SharedViewModel.csproj", "{C78DB57E-891F-4A58-A540-1A9D607599F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{212E4076-6A10-42B4-8E0C-A36D839B8B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{212E4076-6A10-42B4-8E0C-A36D839B8B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{212E4076-6A10-42B4-8E0C-A36D839B8B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78DB57E-891F-4A58-A540-1A9D607599F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78DB57E-891F-4A58-A540-1A9D607599F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78DB57E-891F-4A58-A540-1A9D607599F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78DB57E-891F-4A58-A540-1A9D607599F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

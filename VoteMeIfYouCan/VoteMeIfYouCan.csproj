@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DAC\DAC.csproj" />
+    <ProjectReference Include="..\SharedViewModel\SharedViewModel.csproj" />
   </ItemGroup>
 
 </Project>
