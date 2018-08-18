@@ -1,13 +1,11 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DBService.Models
+namespace DAC.Models
 {
     public class User
     {
         [BsonId]
-        public int _id { get; set; }
+        public string UserName { get; set; }
     }
 }
