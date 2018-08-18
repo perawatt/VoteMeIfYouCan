@@ -88,18 +88,49 @@ namespace Biz
             await dac.AddTopic(topic);
         }
 
-        public Task AddChoice(string userName, string topicId, string choiceName)
+        public async Task AddChoice(string userName, string topicId, string choiceName)
         {
+            var topic = await dac.GetTopic(topicId);
             var choice = new Choice
             {
-
+                _id = Guid.NewGuid().ToString(),
+                ChoiceName = choiceName,
+                CreateDate = DateTime.Now,
+                Votes = new List<Vote>(),
             };
-            throw new NotImplementedException();
+            var upDatedchoice = new List<Choice>();
+            upDatedchoice.AddRange(topic.Choices.ToList());
+            upDatedchoice.Add(choice);
+            var upDatedTopic = topic;
+            upDatedTopic.Choices = upDatedchoice;
+            await dac.UpDateTopic(upDatedTopic);
         }
 
-        public Task Vote(int score, string topic, string choice, string userName)
+        public async Task Vote(int score, string topicId, string choiceId, string userName)
         {
-            throw new NotImplementedException();
+            var topic = await dac.GetTopic(topicId);
+
+            var vote = new Vote
+            {
+                _id = Guid.NewGuid().ToString(),
+                Rate = score,
+                UserName = userName,
+                VoteDate = DateTime.Now
+            };
+
+            var choice = topic.Choices.FirstOrDefault(it => it._id == choiceId);
+
+            var updatedVote = new List<Vote>();
+            updatedVote.AddRange(choice.Votes.ToList());
+            updatedVote.Add(vote);
+
+            var updatedChoice = choice;
+            updatedChoice.Votes = updatedVote;
+            var upDatedTopic = topic;
+
+            upDatedTopic.Choices.FirstOrDefault(x => x._id == choiceId).Votes = updatedVote;
+
+            await dac.UpDateTopic(upDatedTopic);
         }
 
         private TopicViewModel ConvertToTopicViewModel(Topic topic)

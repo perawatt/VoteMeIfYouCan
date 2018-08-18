@@ -13,7 +13,7 @@ namespace BizContract
         Task<ToppicAllViewModel> ListTopic(string userName);
         Task<TopicViewModel> ListChoice(string topicId);
         Task<IEnumerable<VoteViewModel>> GetVoteDetail(string topicId, string choiceId);
-        Task Vote(int score, string topic, string choice, string userName);
+        Task Vote(int score, string topicId, string choiceId, string userName);
         Task AddTopic(string userName, string topicName);
         Task AddChoice(string userName, string topicId, string choiceName);
     }

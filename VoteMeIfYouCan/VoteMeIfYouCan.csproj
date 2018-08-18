@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DAC\DAC.csproj" />
+    <ProjectReference Include="..\BizContract\BizContract.csproj" />
+    <ProjectReference Include="..\Biz\Biz.csproj" />
     <ProjectReference Include="..\SharedViewModel\SharedViewModel.csproj" />
   </ItemGroup>
 

@@ -6,6 +6,7 @@ using DAC;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.Threading.Tasks;
+using Biz;
 
 namespace VoteMeIfYouCan.Controllers
 {
@@ -13,6 +14,7 @@ namespace VoteMeIfYouCan.Controllers
     {
         public IActionResult Index()
         {
+            var a = new VoteBiz();
             return View();
         }
         public IActionResult Topics()
