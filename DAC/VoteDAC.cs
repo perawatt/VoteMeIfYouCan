@@ -27,6 +27,13 @@ namespace DAC
             TopicCollection = database.GetCollection<Topic>(topicCollectionName);
         }
 
+
+        public async Task<User> GetUser(string userName)
+        {
+            var result = await UserCollection.Find(it => it.UserName == userName).FirstOrDefaultAsync();
+            return result;
+        }
+
         public async Task AddUser(User user)
         {
             await UserCollection.InsertOneAsync(user);
@@ -51,7 +58,8 @@ namespace DAC
 
         public async Task<IEnumerable<Topic>> ListTopic(string userName)
         {
-            return await TopicCollection.Find(it => true).ToListAsync();
+            var result = await TopicCollection.Find(it => true).ToListAsync();
+            return result;
         }
 
         public async Task<IEnumerable<Vote>> GetVoteDetail(string topicId, string choiceId)
@@ -59,6 +67,12 @@ namespace DAC
             var topic = await TopicCollection.Find(it => it._id == topicId).FirstOrDefaultAsync();
             var choice = topic.Choices.FirstOrDefault(it => it._id == choiceId);
             return choice.Votes;
+        }
+
+        public async Task<Topic> GetTopic(string topicId)
+        {
+            var result = await TopicCollection.Find(it => it._id == topicId).FirstOrDefaultAsync();
+            return result;
         }
     }
 }

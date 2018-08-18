@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BizContract\BizContract.csproj" />
+    <ProjectReference Include="..\DACContract\DACContract.csproj" />
+    <ProjectReference Include="..\DAC\DAC.csproj" />
   </ItemGroup>
 
 </Project>
