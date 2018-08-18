@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteMeIfYouCan", "VoteMeIfYouCan\VoteMeIfYouCan.csproj", "{48DFDDF3-686C-4778-8116-70AEACAEB684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoteMeIfYouCan", "VoteMeIfYouCan\VoteMeIfYouCan.csproj", "{48DFDDF3-686C-4778-8116-70AEACAEB684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBService", "DBService\DBService.csproj", "{158960B4-7450-4564-BFA6-F9BD4A9AB631}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{48DFDDF3-686C-4778-8116-70AEACAEB684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48DFDDF3-686C-4778-8116-70AEACAEB684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48DFDDF3-686C-4778-8116-70AEACAEB684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158960B4-7450-4564-BFA6-F9BD4A9AB631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158960B4-7450-4564-BFA6-F9BD4A9AB631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158960B4-7450-4564-BFA6-F9BD4A9AB631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158960B4-7450-4564-BFA6-F9BD4A9AB631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
