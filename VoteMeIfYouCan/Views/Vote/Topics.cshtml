@@ -2,18 +2,36 @@
 @{
     ViewData["Title"] = "Topics";
 }
-<a asp-action="AddTopic" class="btn btn-default">+Add Topic</a>
-
-<h2>My Topics</h2>
-<a asp-action="VoteChoice">Topic B</a>
-
-<h2>Topics</h2>
-
-<a asp-action="VoteChoice">Topic A</a>
+<div class="row text-right">
+    <a asp-action="AddTopic" class="btn btn-black">Create Poll</a>
+</div>
 <br />
-<a asp-action="VoteChoice">Topic B</a>
-<br />
-<a asp-action="VoteChoice">Topic C</a>
+
+<div class="well-white">
+    <h2 class="text-oranger">Poll ของฉัน</h2>
+    <hr />
+    <h4>
+        <a asp-action="VoteChoice">Topic B</a>
+    </h4>
+</div>
+
+<div class="well-white">
+    <h2 class="text-oranger">Poll ทั้งหมด</h2>
+    <hr />
+    <h4>
+        <a asp-action="VoteChoice">Topic B</a>
+    </h4>    
+    <hr />
+    <h4>
+        <a asp-action="VoteChoice">Topic B</a>
+    </h4>    
+    <hr />
+    <h4>
+        <a asp-action="VoteChoice">Topic B</a>
+    </h4>
+</div>
+
+
 
 
 

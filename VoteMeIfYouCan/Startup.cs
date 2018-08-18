@@ -56,7 +56,7 @@ namespace VoteMeIfYouCan
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Vote}/{action=Index}/{id?}");
             });
         }
     }

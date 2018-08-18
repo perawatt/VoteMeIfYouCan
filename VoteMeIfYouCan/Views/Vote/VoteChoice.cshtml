@@ -3,63 +3,80 @@
     ViewData["Title"] = "VoteChoice";
 }
 
-<h2>Topic A</h2>
-<a asp-action="AddChoice" class="btn btn-default">+Add Choice</a>
+<div class="well-white text-center">
+    <h2>Topic A</h2>
+</div>
+<div class="well-white">
+    <form>
+        @* item *@
+        <div>
+            <label>บ้านมอเบกอรี่</label>
+            <div class="dropdown pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Rating
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <br />
+            <a asp-action="ViewVoted">Voted 34</a>
+            <label>Rating 4</label>
+        </div>
+        <hr />
+        @* item *@
+        <div>
+            <label>บ้านมอเบกอรี่</label>
+            <div class="dropdown pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Rating
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <br />
+            <a asp-action="ViewVoted">Voted 34</a>
+            <label>Rating 4</label>
+        </div>
+        <hr />
+        @* item *@
+        <div>
+            <label>บ้านมอเบกอรี่</label>
+            <div class="dropdown pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Rating
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <br />
+            <a asp-action="ViewVoted">Voted 34</a>
+            <label>Rating 4</label>
+        </div>
+        <hr />
+        <div class="row text-center">
+            <a asp-action="AddChoice" class="btn btn-default">+Add Choice</a>
+            <br />
+            <br />
+            <a asp-action="Topics" class="btn btn-black">Vote</a>
+        </div>
 
-<form>
-    <div class="form-group well">
-        <label>Choice A</label>
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Rating
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-        </div>
-        <a asp-action="ViewVoted">Voted 34</a>
-        <label>Rating 4</label>
-    </div>
-    <div class="form-group well">
-        <label>Choice B</label>
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Rating
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-        </div>
-        <a asp-action="ViewVoted">Voted 34</a>
-        <label>Rating 4</label>
-    </div>
-    <div class="form-group well">
-        <label>Choice C</label>
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Rating
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-        </div>
-        <a asp-action="ViewVoted">Voted 34</a>
-        <label>Rating 4</label>
-    </div>
-    <a asp-action="Topics" class="btn btn-default">ตกลง</a>
-</form>
+    </form>
+</div>

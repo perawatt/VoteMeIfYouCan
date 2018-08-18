@@ -3,12 +3,14 @@
     ViewData["Title"] = "AddTopic";
 }
 
-<h2>AddTopic</h2>
-
-<form>
-    <div class="form-group">
-        <label>Topic</label>
-        <input type="text" class="form-control" placeholder="หัวข้อ">
-    </div>
-    <a asp-action="Topics" class="btn btn-default">ตกลง</a>
-</form>
+<div class="well-white text-center">
+    <form>
+        <div class="form-group col-md-12">
+            <div class="col-md-8 col-md-offset-2">
+                <label>หัวข้อ</label>
+                <input type="text" class="form-control" placeholder="หัวข้อ">
+            </div>
+        </div>
+        <a asp-action="Topics" class="btn btn-black">Add Poll</a>
+    </form>
+</div>
