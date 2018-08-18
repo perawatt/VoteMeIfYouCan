@@ -22,7 +22,6 @@ namespace VoteMeIfYouCan.Controllers
         public async Task<IActionResult> AddTopic()
         {
             var svc = new VoteDAC();
-            await svc.TestAddTopic();
             return View();
         }
         public IActionResult VoteChoice()

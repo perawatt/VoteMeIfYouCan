@@ -2,7 +2,7 @@
 
 namespace BizContract
 {
-    public class IVoteBiz
+    public interface IVoteBiz
     {
 
     }
