@@ -12,6 +12,5 @@ namespace DACContract
         Task<IEnumerable<Vote>> GetVoteDetail(string topicId, string choiceId);
         Task AddUser(User user);
         Task UpDateTopic(Topic topic);
-        Task Vote(string topicId, string choiceId, Vote vote);
     }
 }
