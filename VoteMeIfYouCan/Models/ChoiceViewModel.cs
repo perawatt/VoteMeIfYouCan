@@ -5,13 +5,11 @@ using System.Threading.Tasks;
 
 namespace VoteMeIfYouCan.Models
 {
-    public class TopicViewModel
+    public class ChoiceViewModel
     {
         public string _id { get; set; }
-        public string TopicName { get; set; }
-        public string OwnerUserName { get; set; }
-        public IEnumerable<ChoiceViewModel> Choices { get; set; }
+        public string ChoiceName { get; set; }
+        public IEnumerable<VoteViewModel> Votes { get; set; }
         public DateTime CreateDate { get; set; }
-
     }
 }
